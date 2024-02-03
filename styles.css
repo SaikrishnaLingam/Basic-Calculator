@@ -1,0 +1,135 @@
+/* color palatte:
+FDF0D1
+AC7D88
+85586F
+643843 */
+
+body {
+    text-align: center;
+    background-color: #FDF0D1;
+}
+
+h1 {
+    color: #85586F;
+}
+
+.container {
+    background-color: #AC7D88;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    padding: 1px;
+    width: 340px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.calc {
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% auto;
+    grid-template-rows: 25% 15% 15% 15% 15% 15%;
+    grid-template-areas: 
+    "disp disp disp disp"
+    "clear divide multiple backspace"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zeros zeros period equal"
+}
+
+.grid-item, .grid_disp_item {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    color: #FDF0D1;
+    margin: 10px;
+}
+
+.grid_disp_item {
+    font-size: 45px;;
+}
+
+
+
+.backspace {
+    grid-area: backspace;
+    color: #643843;
+}
+
+.clear {
+    grid-area: clear;
+    color: #643843;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.multiple {
+    grid-area: multiple;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.equal {
+    grid-area: equal;
+    height: 140px;
+}
+
+.period {
+    grid-area: period;
+}
+
+.zeros {
+    grid-area: zeros;
+    width: 140px;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
